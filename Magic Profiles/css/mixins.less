@@ -1,0 +1,29 @@
+@border: 6px solid black;
+@margin: 40px auto 40px auto;
+@padding: 40px;
+@width: 500px;
+@height: 600px;
+@border-radius: 10px; 
+
+@baseColor: #b80626;
+@baseFontSize: 1em;
+@Jonas_color: #4e8a5e;
+
+
+.whole_frame(@baseColor, @border, @margin, @padding, @width, @height, @borderRadius) {
+    background-color: @baseColor;
+    border: 6px solid black;
+    margin: 40px auto 40px auto;
+    padding: 40px;
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;    
+    
+}
+#j_whole {
+    .whole_frame(@Jonas_color, @border, @margin, @padding, @width, @height, @border_radius);
+}
+
+#c_whole {
+    .whole_frame(@baseColor, @border, @margin, @padding, @width, @height, @border_radius);
+}
