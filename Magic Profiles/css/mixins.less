@@ -1,0 +1,60 @@
+@indextext: white;
+
+@border: 6px solid black;
+@margin: 20px auto 40px auto;
+@padding: 40px;
+@width: 500px;
+@height: 600px;
+@border_radius: 10px; 
+
+@baseColor: #60a177;
+@baseFontSize: 1em;
+@Jonas_color: #4e8a5e;
+@Curtis_color: #e62727;
+
+// used for description and frame //
+@JonascardColor: lighten(@Jonas_color,15); 
+@CurtiscardColor: lighten(@Curtis_color,15);
+
+@cardBorder: 2px solid black;
+@cardPadding: 20px;
+@cardBorder_radius: 10px; 
+@fontSize: @baseFontSize * 1.5;
+@cardMargin: 0px auto 0px auto;
+
+
+
+@des_border: 2px solid black;
+@des_padding: 20px;
+@des_border_radius: 10px;
+    
+//   Mixins   //
+
+.whole_frame(@Jonas_color, @border, @margin, @padding, @width, @height, @border_radius) {
+    background-color: @Jonas_color ;
+    border: @border;
+    margin: @margin;
+    padding: @padding;
+    width: @width;
+    height: @height;
+    border-radius: @border_radius;    
+    
+}
+
+.card_frame(@Color,@cardBorder, @cardPadding, @cardBorder_radius, @fontSize, @cardMargin) {
+    background-color: @Color;
+    border: @cardBorder;
+    padding: @cardPadding;
+    border-radius: @cardBorder_radius; 
+    font-size: @fontSize;
+    margin: @cardMargin;
+    
+}
+
+.description(@color, @des_border, @des_padding, @des_border_radius) {
+    background-color: @color;
+    border: @des_border;
+    padding: @des_padding;
+    border-radius: @des_border_radius;
+    
+} 
